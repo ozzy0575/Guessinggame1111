@@ -11,7 +11,7 @@ function FileNum {
 	
 echo "Please guess how many files are in this directory"
 read response
-source FileNum.sh
+
 y=`FileNum`
 
 while [[ $response -ne $y ]]
@@ -32,3 +32,6 @@ if [[ $response -eq $y ]]
 	then echo "well guessed"
 else echo "error"
 fi
+
+rm /home/deeb/Unix/Guessinggame/readme.md
+make readme.md
